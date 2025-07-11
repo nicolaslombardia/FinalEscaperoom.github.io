@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria - Por Orden de los Peaky Blinders</title>
+    
+    <!-- Aquí empieza la magia del diseño (CSS) -->
+    <style>
+        /* Importamos una fuente de Google Fonts que recuerda a la época */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
+        /* Estilos generales del cuerpo de la página */
+        body {
+            /* Usamos la imagen correcta que subiste como fondo */
+            background-image: url('http://googleusercontent.com/file_content/1');
+            background-size: cover; /* La imagen cubre todo el espacio */
+            background-position: center; /* La imagen se centra */
+            background-attachment: fixed; /* La imagen no se mueve al hacer scroll */
+            
+            color: #EAEAEA; /* Un color de texto blanco desgastado */
+            font-family: 'Lora', serif; /* La fuente principal para el texto */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            position: relative; /* Necesario para la capa superpuesta */
+        }
+
+        /* Creamos una capa oscura sobre el fondo para que el texto sea más legible */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.65); /* Capa negra semitransparente */
+            z-index: 1;
+        }
+
+        /* El contenedor principal de nuestra historia */
+        .container {
+            position: relative; /* Para que esté por encima de la capa oscura */
+            z-index: 2;
+            max-width: 750px;
+            width: 100%;
+            background-color: rgba(10, 10, 10, 0.75); /* Fondo del cuadro más sólido */
+            border: 1px solid #665a33; /* Borde dorado oscuro */
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+        }
+
+        /* Estilo para el título principal de victoria */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37; /* Un dorado más brillante para la victoria */
+            font-size: 2.4em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5); /* Sombra de texto dorada */
+        }
+
+        /* Estilo para el subtítulo de felicitaciones */
+        h2 {
+            font-family: 'Lora', serif;
+            color: #EAEAEA;
+            font-size: 1.5em;
+            font-weight: normal;
+            margin: 15px 0;
+        }
+        
+        /* Estilo para la cita (sin la barra lateral) */
+        blockquote {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #cccccc;
+            margin: 30px auto;
+            padding: 10px 20px;
+            max-width: 80%;
+        }
+
+        /* Estilo para los párrafos de la historia */
+        .story p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        /* Estilo especial para la última línea, la leyenda */
+        .legend {
+            font-size: 1.6em;
+            font-style: italic;
+            color: #d4af37; /* Dorado brillante a juego con el título */
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        /* Media Queries para mejorar la visualización en móviles */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            blockquote {
+                font-size: 1.1em;
+                max-width: 95%;
+            }
+            .story p {
+                font-size: 1em;
+            }
+            .legend {
+                font-size: 1.3em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Esta es la estructura de la página (HTML) -->
+    <div class="container">
+        
+        <h1>🏆 CÓDIGO ACEPTADO 🏆</h1>
+        <h2>¡Felicitaciones, equipo ganador!</h2>
+        <p>¡Ustedes son los verdaderos Peaky Blinders de esta noche!</p>
+        
+        <blockquote>“Honor, sangre, lealtad. Familia, ante todo.”</blockquote>
+
+        <div class="story">
+            <p>Kuki está orgulloso. La familia Shelby los felicita. Lograron escapar de la trampa tendida por los Sabini.</p>
+            <p>Kuki, desde su Chevy, los espera en la esquina con el motor en marcha y dos vasos de whisky en la guantera.</p>
+        </div>
+
+        <p class="legend">¡Hoy se convirtieron en leyenda!</p>
+
+    </div>
+
+</body>
+</html>
